@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOH Arms of Hope</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .section-padding {
+            padding: 4rem 1rem;
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 4rem;
+            }
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .btn-primary {
+            background-color: #4F46E5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #4338CA;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #4F46E5, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header/Navigation Bar -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <!-- Updated logo image to use CLUB'sLOGO from Downloads -->
+                <img src="CLUB'sLOGO.png" alt="AOH Arms of Hope Logo" class="h-12 w-12 rounded-full shadow-md">
+                <span class="text-2xl font-bold text-gradient">AOH Arms of Hope</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#mission-vision" class="text-gray-600 hover:text-indigo-600 font-medium">About Us</a>
+                <a href="#events" class="text-gray-600 hover:text-indigo-600 font-medium">Events</a>
+                <a href="#newspaper-posting" class="text-gray-600 hover:text-indigo-600 font-medium">Newspaper</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-medium">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600 hover:text-indigo-600 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </header>
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center space-y-6 transform -translate-y-full transition-transform duration-300 ease-in-out md:hidden">
+        <button id="close-mobile-menu" class="absolute top-4 right-4 text-gray-600 hover:text-indigo-600 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <a href="#mission-vision" class="text-gray-800 text-2xl font-medium hover:text-indigo-600">About Us</a>
+        <a href="#events" class="text-gray-800 text-2xl font-medium hover:text-indigo-600">Events</a>
+        <a href="#newspaper-posting" class="text-gray-800 text-2xl font-medium hover:text-indigo-600">Newspaper</a>
+        <a href="#contact" class="text-gray-800 text-2xl font-medium hover:text-indigo-600">Contact</a>
+    </div>
+    <section id="introduction" class="relative bg-indigo-600 text-white section-padding overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://googleusercontent.com/file_content/0');"></div>
+        <div class="container mx-auto px-4 relative z-10 text-center bg-black bg-opacity-50 rounded-lg p-8">
+            <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                Building a Caring Community for the Homeless
+            </h1>
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
+                We are a student-led, non-profit organization dedicated to supporting homeless individuals with their unique needs, providing financial assistance, food, and essential necessities.
+            </p>
+            <a href="#mission-vision" class="btn-primary inline-block text-lg">Learn More About Us</a>
+        </div>
+    </section>
+    <section id="mission-vision" class="section-padding bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Our Mission</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We strive to support the homeless according to their individual needs, providing financial assistance, food, and other essential necessities.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Our Vision</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        We are a student-led, non-profit organization, and our vision is to create a community where each homeless person feels supported by a caring community. We aim to help the homeless with their basic needs and support them to create a better tomorrow.
+                    </p>
+                </div>
+                <div class="card">
+                    <h2 class="text-3xl font-bold text-indigo-700 mb-4">We Believe in Equality</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our core principle is equality. We believe every individual, regardless of their circumstances, deserves dignity, respect, and equal opportunities. We are committed to fostering an inclusive environment where everyone feels valued and supported.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events" class="section-padding bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-gradient mb-12">Our Major Events</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/A78BFA/FFFFFF?text=Fundraiser+Event" alt="Fundraiser Event" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">School Fundraiser</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We will actively organize a fundraiser at school to provide financial assistance to homeless people. These events are crucial for gathering the resources needed to make a tangible difference.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/6366F1/FFFFFF?text=Community+Events" alt="Community Events" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Yearly Community Events</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We'll also host yearly events to make our organization more fun and extend support to each individual, fostering a sense of community and belonging.
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/8B5CF6/FFFFFF?text=Donation+Trip" alt="Donation Trip" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Direct Donation Trips</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Additionally, we will arrange a donation trip where members/executives will deliver the money earned from events/fundraisers directly to homeless people.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="newspaper-posting" class="section-padding bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-gradient text-center mb-12">Newspaper Postings</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="card">
+                    <img src="http://googleusercontent.com/file_content/0" alt="Newspaper Image 1" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Local Outreach Initiative Success</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            A report on our recent outreach program featured in the local newspaper, highlighting the impact of our efforts in providing essential supplies and support to the community.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/D1D5DB/4B5563?text=Newspaper+Image+2" alt="Newspaper Image 2" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Student Club Making a Difference</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            An article recognizing AOH Arms of Hope's dedication and the positive change our student-led initiatives are bringing to the lives of homeless individuals.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/E5E7EB/6B7280?text=Newspaper+Image+3" alt="Newspaper Image 3" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Community Rallies for Homeless Support</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Coverage of a recent community event or fundraiser, showcasing the collective effort to support our mission and vision for a more caring society.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/F3F4F6/9CA3AF?text=Newspaper+Image+4" alt="Newspaper Image 4" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <div class="p-4">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Hope Blooms in Our City</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            A feature story on the positive impact of AOH Arms of Hope's initiatives, bringing hope and practical assistance to those in need within our community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-padding bg-indigo-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-lg mb-4">
+                Have questions or want to get involved? Reach out to us!
+            </p>
+            <div class="max-w-xl mx-auto">
+                <p class="text-gray-300">
+                    [Your Club Email] | [Your Club Phone Number] | [Your Club Address]
+                </p>
+                <p class="text-gray-300 mt-2">
+                    [Social Media Links]
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-800 text-gray-300 py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 AOH Arms of Hope. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const mobileMenuButton = document.querySelector('header button');
+        const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+        const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+        const mobileMenuLinks = mobileMenuOverlay.querySelectorAll('a');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('-translate-y-full');
+            mobileMenuOverlay.classList.add('translate-y-0');
+        });
+        closeMobileMenuButton.addEventListener('click', () => {
+            mobileMenuOverlay.classList.remove('translate-y-0');
+            mobileMenuOverlay.classList.add('-translate-y-full');
+        });
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuOverlay.classList.remove('translate-y-0');
+                mobileMenuOverlay.classList.add('-translate-y-full');
+            });
+        });
+    </script>
+</body>
+</html>
